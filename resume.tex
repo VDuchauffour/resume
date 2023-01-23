@@ -1,0 +1,158 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[vmargin=.8cm, hmargin=.5cm]{geometry}
+\usepackage{wasysym}
+\usepackage{ragged2e}
+
+% set font default
+% \usepackage[default]{comfortaa}
+% \usepackage{cmbright}
+% \usepackage[default]{lato}
+\usepackage{fetamont}
+% \usepackage[default]{gillius}
+% \usepackage[light,math]{iwona}
+% \usepackage[thin]{roboto} 
+\renewcommand*\familydefault{\sfdefault} 
+
+\input{settings}
+
+\begin{document}
+\thispagestyle{empty}
+
+
+% Left column
+\begin{adjustbox}{valign=t}
+    \begin{minipage}{0.3\textwidth}
+        \begin{center}
+            \begin{tikzpicture}
+                \clip (0,0) circle (1.9cm) node
+                    {\includegraphics[width=4cm]{profile_pic.jpeg}};
+            \end{tikzpicture}
+            {\Large \bfseries Vincent Duchauffour}\\
+            {\large \bfseries Data Scientist}\\[1cm]
+            \raggedright
+            Paris, France\\
+            \phone~06.09.78.66.27\\
+            \textcolor{ColorTwo}{\faEnvelopeO}
+            \myhref{mailto:vincent.duchauffour@proton.me}{vincent.duchauffour@proton.me} \\
+            \textcolor{ColorTwo}{\faChain}
+            \myhref{https://www.linkedin.com/in/vincent-duchauffour-3a9641155/}{Linkedin}\\
+            \textcolor{ColorTwo}{\faChain}
+            \myhref{https://github.com/VDuchauffour}{Github}
+        \end{center}
+        \vspace{-.5cm}
+        \section*{Profile}
+        \justifying Former social science student.\\
+        My interest in computer science and mathematics led me to reorient my professional project towards data science.\\
+        My first experience as a data analyst allowed me to focus on business oriented data analysis and analytics engineering.\\
+        My current experience allowed me to confirm this career path by contributing to data science projects in production-ready context.
+        \vspace{-.5cm}
+        \section*{Skills}
+        \raggedright
+        \begin{itemize}
+            \itemsep0em
+            \item Python
+            \item Scikit-Learn, PyTorch
+            \item Linux, Git, Docker
+            \item GCP, DVC, W\&B
+            \item SQL, Elasticsearch, MongoDB
+        \end{itemize}
+        \vspace{-.5cm}
+        \section*{Languages}
+        \raggedright
+        \begin{itemize}
+            \itemsep0em
+            \item French (Native)
+            \item English (B2)
+        \end{itemize}
+        \vspace{-.5cm}
+        % \section*{Interest}
+        % \raggedright
+        % Music production, reading
+        % \vspace{-.5cm}
+    \end{minipage}
+\end{adjustbox}
+% Vertical rule
+\hfill
+\begin{adjustbox}{valign=t}
+    \begin{minipage}{0.02\textwidth}
+        \MyVerticalRule
+    \end{minipage}
+\end{adjustbox}
+\hfill
+% Right column
+\begin{adjustbox}{valign=t}
+    \begin{minipage}{0.6\textwidth}
+        \section*{Experience}
+        \vspace{-.3cm}
+        \begin{description}
+            \raggedright
+            \item[\normalfont \textcolor{ColorOne}{Since Oct. 2022}]
+                \textbf{Machine Learning Engineer - Kinetix}\\
+                \small
+                \begin{itemize}[topsep=0pt]
+                    \item \textbf{Rewrite} large part of the codebase with strong OOP principes (\textbf{SOLID principes} / Anti-code smells policy)
+                    \item \textbf{Reduce by 50\% the inference time} on the main ML pipeline (\textbf{PyTorch}, profilers)
+                \end{itemize}
+                \normalsize
+            \item[\normalfont \textcolor{ColorOne}{Sep. 2021 -- Sep. 2022}]
+                \textbf{Data Scientist - Yanport}\\
+                \small
+                \begin{itemize}[topsep=0pt]
+                    \item \textbf{Design, build and deploy} an improvement on existing \textbf{NLP} system with ordinal classification with focus on explainability (\textbf{NLTK}, \textbf{Spacy}, \textbf{PyTorch}, \textbf{HuggingFace})
+                    \item Design, build and deploy \textbf{new features} on the home value estimate engine (\textbf{CatBoost})
+                    \item Maintain and deploy \textbf{data pipelines} and internal scipting
+                    \item \textbf{EDA} and ad hoc analyses for external client
+                \end{itemize}
+                \normalsize
+            \item[\normalfont \textcolor{ColorOne}{Sep. 2019 -- Sep. 2021}]
+                \textbf{Data analyst - Qare}\\
+                \small
+                \begin{itemize}[topsep=0pt]
+                    \item \textbf{Design, build and deploy} a monitoring tool for data and ETLs quality
+                    \item \textbf{Analytics engineering} (DBT)
+                    \item \textbf{Contributing to ETLs} and RETLs (MongoDB, AWS Redshift, Salesforce)
+                    \item \textbf{EDA} and ad hoc analyses, \textbf{interact with} concerned \textbf{corporate departments} and make \textbf{public presentation} of results
+                    \item Build \textbf{Tableau} dashboards
+                \end{itemize}
+                \normalsize
+        \end{description}
+        \vspace{-1cm}
+        \section*{Education}
+        \vspace{-.3cm}
+        \begin{description}
+            \raggedright
+            \item [\normalfont \textcolor{ColorOne}{2021 -- 2022}]~\\
+                  \textbf{Msc Data Science (IASD)} - Paris Dauphine - Apprenticeship\\
+                  \textbf{Master thesis:} Improving an existing NLP system with ordinality, a deep dive into explainability
+                  % \small
+                  % \begin{itemize}[topsep=0pt]
+                  %     \item \textbf{ML}: Unsupervised (Dimension reduction, Clustering), Supervised (Linear models, Tree models, SVM)
+                  %     \item \textbf{NLP:} Classic ML, Embedding, Attention Mechanism, Transformers, Bert
+                  %     \item \textbf{Computer Vision:} CNN, ViT, Transfert Learning, Image classification, Objet detection/segmentation, GAN, Face Recognition, Adversarial attack/defense
+                  %     \item \textbf{Graph:} Graph theory, ML on graph (node classification, link prediction), GNN
+                  %     \item \textbf{Reinforcement Learning:} MDP, Monte Carlo, Q-learning, DQN, Monte Carlo Tree Search
+                  %     \item \textbf{Misc.:} Optimization for ML, Recommander system, ML on large scale, VAE
+                  % \end{itemize}
+                  % \normalsize
+            \item [\normalfont \textcolor{ColorOne}{2019 -- 2021}]~\\
+                  \textbf{Msc Digital Humanities} - CNAM - Apprenticeship\\
+                  \textbf{Master thesis:} Data analysis for efficient telemedecine customer service\\
+                  \small
+                  \begin{itemize}[topsep=0pt]
+                      \item Programming, Statistics, ML concepts, Linear models, Clustering\\[.2cm]
+                  \end{itemize}
+                  \normalsize
+
+                  \textbf{Math evening classes} - CNAM
+                  \small
+                  \begin{itemize}[topsep=0pt]
+                      \item Analysis, Linear algebra, Graph theory, Linear optimisation, Probabilities, Statistics
+                  \end{itemize}
+                  \normalsize
+            \item [\normalfont \textcolor{ColorOne}{2012-2017}]~\\
+                  \textbf{Bachelor \& Master Philosophy} -  Paris Nanterre
+                  % Ethic, epistemology
+        \end{description}
+    \end{minipage}
+\end{adjustbox}
+\end{document}
