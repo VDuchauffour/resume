@@ -2,6 +2,7 @@ name: Build LaTex document
 on:
   push:
   workflow_dispatch:
+permissions: write-all
 
 jobs:
   build_latex:
