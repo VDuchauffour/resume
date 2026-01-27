@@ -1,0 +1,7 @@
+services:
+  latex:
+    image: texlive/texlive:latest
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: latexmk -pdf -interaction=nonstopmode resume.tex
