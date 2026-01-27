@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: (^.*\.csv$)|(^.*dvc\.lock$)
+      - id: end-of-file-fixer
+      - id: check-xml
+      - id: check-json
+      - id: check-yaml
+      - id: check-toml
+      - id: debug-statements
+      - id: check-executables-have-shebangs
+      - id: check-case-conflict
+      - id: check-added-large-files
+      - id: detect-private-key
+  # Formatter for markdown files
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 1.0.0
+    hooks:
+      - id: mdformat
+        args:
+          - --number
+        additional_dependencies:
+          # - mdformat-gfm
+          # - mdformat-tables
+          # - mdformat-frontmatter
+          - mdformat-shfmt
+  # An extremely fast LaTeX formatter written in Rust
+  - repo: https://github.com/WGUNDERWOOD/tex-fmt
+    rev: v0.5.6
+    hooks:
+      - id: tex-fmt

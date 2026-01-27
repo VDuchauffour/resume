@@ -11,3 +11,11 @@ docker compose up
 ```
 
 This runs `latexmk -pdf` on `resume.tex` inside a TeX Live container.
+
+## Development
+
+Setup `pre-commit` with the following command:
+
+```shell
+pre-commit install
+```
